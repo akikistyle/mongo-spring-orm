@@ -6,6 +6,24 @@ A simple MongoDB ORM jar for Java Spring to create DAO and services easily.
 
 Use AntBuild to build jar.
 
+# Basic package
+
+**spring-data-mongodb.jar**
+
+# Supported operations
+
+**count** - db.collection.count({})
+
+**find** - db.collection.find({}).sort({}).skip().limit()
+
+**insert** - db.collection.insert({})
+
+**updateFirst** - db.collection.update({},{"$set":{}})
+
+**updateMulti** - db.collection.update({},{"$set":{}},{multi:true})
+
+**remove** - db.collection.remove({})
+
 # How to use
 
 Create test bean such as:
